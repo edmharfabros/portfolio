@@ -1,5 +1,6 @@
 import { Container, Title, Paragraph, SwipeRightIcon, TextContainer, Name, Position, Email, LinkedinIcon, GithubIcon } from './components'
 import { useSpring, animated, interpolate } from 'react-spring'
+import { useCallback } from 'react'
 
 const Index = () => {
 
@@ -18,12 +19,12 @@ const Index = () => {
     delay: 1000,
     duration: 800,
     reset: true,
-    to: async (next) => {
+    to: useCallback(async (next) => {
       while (1) {
-        await next({ transform: 'translateX(0px)' })
-        await next({ transform: 'translateX(20px)' })
+        await next({ transform: 'translateX(0px)', })
+        await next({ transform: 'translateX(20px)', })
       }
-    },
+    }, []),
     from: {
       transform: 'translateX(0px)',
     }
@@ -32,8 +33,8 @@ const Index = () => {
   return (
     <Container>
       <TextContainer>
-        <Title>Let's <span style={{color:`#28abb9`}}>Connect</span>
-        <Paragraph>Got questions ? You can always message me using these platforms.</Paragraph>
+        <Title>Let's <span style={{ color: `#28abb9` }}>Connect</span>
+          <Paragraph>Got questions ? You can always message me using these platforms.</Paragraph>
         </Title>
         <Name>
           Edmhar Fabros
