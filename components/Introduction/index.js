@@ -1,6 +1,6 @@
 import { Container, Picture, TextContainer, Title, Name, Position, SwipeLeftIcon } from './components'
-import { useEffect, useCallback } from 'react'
-import { useSpring, animated, interpolate } from 'react-spring'
+import { useEffect } from 'react'
+import { useSpring, animated } from 'react-spring'
 
 const Index = () => {
   const props = useSpring({
@@ -34,20 +34,15 @@ const Index = () => {
   })
 
   const propsHand = useSpring({
-    delay: 3000,
-    duration: 800,
-    reset: true,
-    to: useCallback(async (next) => {
-      while (1) {
-        await next({ transform: 'translateX(0px)' })
-        await next({ transform: 'translateX(-20px)', })
-      }
-    },[]),
+    delay: 500,
+    loop: { reverse: true },
+    to: {
+      transform: 'translateX(-20px)'
+    },
     from: {
       transform: 'translateX(0px)',
     }
   })
-
 
   const startAnimation = () => {
     setTimeout(() => {
@@ -127,7 +122,7 @@ const Index = () => {
             <Name>Edmhar Fabros</Name>
           </animated.div>
           <Position className="typewrite" data-period="1000" data-type='[ "Backend Developer", "Frontend Developer", "Full Stack Developer :)"]'>
-            <span class="wrap"></span>
+            <span className="wrap"></span>
           </Position>
           <animated.div
             style={{ ...propsHandShow, width: `100%` }}
