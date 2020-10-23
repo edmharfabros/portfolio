@@ -45,6 +45,10 @@ export default function MyApp({ Component, pageProps }) {
         />
         <meta name="title" content="Edmhar Fabros | Full Stack Developer" />
         <meta name="description" content="I'm a Full Stack Developer living in the Philippines. Building websites, securing cloud servers, and Software/Database designs are some of my key roles in this field." />
+        <meta property="og:url" content="https://edmharfabros.github.io/portfolio/" />
+        <meta property="og:title" content="Edmhar Fabros | Full Stack Developer" />
+        <meta property="og:description" content="I'm a Full Stack Developer living in the Philippines. Building websites, securing cloud servers, and Software/Database designs are some of my key roles in this field." />
+        <meta property="og:image" content="images/page_picture.jpg" />
         <title>Edmhar Fabros | Portfolio</title>
       </Head>
       <GlobalStyle />
