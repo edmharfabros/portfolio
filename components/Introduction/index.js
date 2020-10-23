@@ -2,6 +2,9 @@ import { Container, Picture, TextContainer, Title, Name, Position, SwipeLeftIcon
 import { useEffect } from 'react'
 import { useSpring, animated } from 'react-spring'
 
+
+let timeout = null;
+
 const Index = () => {
   const props = useSpring({
     delay: 800,
@@ -45,7 +48,7 @@ const Index = () => {
   })
 
   const startAnimation = () => {
-    setTimeout(() => {
+    timeout = setTimeout(() => {
       var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -105,6 +108,12 @@ const Index = () => {
 
   useEffect(() => {
     startAnimation()
+
+    return () => {
+      timeout = null
+      const elem = [...document.body.getElementsByTagName('style')]
+      elem.map((item) => item.innerHTML = "")
+    }
   }, [])
 
   return (
