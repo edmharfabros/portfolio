@@ -11,8 +11,10 @@ module.exports = {
     });
     return config;
   },
-  assetPrefix: isProd ? '/portfolio' : '',
-  exportPathMap: () => ({
-    '/': { page: '/' },
-  }),
+  exportPathMap: function () {
+    return {
+      "/": { page: "/" },
+    }
+  },
+  assetPrefix: isProd ? 'https://edmharfabros.github.io/portfolio/' : '',
 };

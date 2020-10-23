@@ -9,7 +9,7 @@ export const Container = styled.div`
   display: flex;
   height: 100%;
   justify-content: center;
-  background: url("/images/bg-work.webp");
+  background: url(images/bg-work.webp);
   background-position: center 15%;
   background-size: cover;
   overflow-y:scroll;
@@ -21,7 +21,7 @@ export const TextContainer = styled.div`
   flex-direction:column;
   justify-content: space-between;
   width:100%;
-  background: rgb(45 97 135 / 0.9);
+  background: rgba(45,97,135,0.9);
   overflow-y:scroll;
   overflow-x: hidden;
 `

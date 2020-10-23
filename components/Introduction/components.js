@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const Picture = styled.div`
   flex: 1;
   flex-basis: 50%;
-  background: url("/images/page_picture.jpg");
+  background: url("images/page_picture.jpg");
   background-position: center;
   background-size: cover;
   display:flex;
