@@ -104,7 +104,7 @@ export const Icon = styled.div`
 `
 
 export const NexplayIcon = styled(Icon)`
-  background: url(/images/nexplay_logo.jpeg);
+  background: url("images/nexplay_logo.jpeg");
   background-size: cover;
   
 `
@@ -115,7 +115,7 @@ export const ZynappseIcon = styled(Icon)`
 `
 
 export const CollegeIcon = styled(Icon)`
-  background: url(/images/sti_logo.png);
+  background: url("images/sti_logo.png");
   background-size: cover;
 `
 
