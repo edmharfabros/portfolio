@@ -59,7 +59,7 @@ export const Title = styled.h1`
 `
 
 export const Name = styled.h1`
-  color: #28abb9;
+  color: rgb(40, 171, 185);
   margin: 0;
   font-size:2.8em;
   line-height:1;

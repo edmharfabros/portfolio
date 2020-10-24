@@ -129,7 +129,7 @@ export const Company = styled.h3`
 
 export const Technologies = styled.div`
   width:100%;
-  padding:1.5em 0px 0.5em 0;
+  padding:0.5em 0px;
   display: inline-flex;
   flex-wrap: wrap;
 `
@@ -142,4 +142,11 @@ export const Chip = styled.span`
   background:#e0e0e0;  
   color:rgba(0, 0, 0, 0.87);
 
+`
+
+export const TechnologyText = styled.p`
+  margin-top:1.5em !important;
+  width: 100%;
+  font-size: 14px !important;
+  font-weight: 200;
 `

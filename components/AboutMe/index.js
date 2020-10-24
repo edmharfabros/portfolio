@@ -34,8 +34,8 @@ const Index = () => {
   return (
     <Container>
       <TextContainer>
-        <Title><span style={{ color: `#28abb9` }}>Hey</span> There.</Title>
-        <Paragraph> I'm a Full Stack Developer living in the Philippines. Building websites, securing cloud servers, and Software/Database designs are some of my key roles in this field. From web components and UX/UI to complicated backend integrations, you can always count on me.</Paragraph>
+        <Title><span style={{ color: `rgb(40, 171, 185)` }}>{`<Hey />`}</span> there.</Title>
+        <Paragraph>I'm a full-stack web developer living in the Philippines. Building websites, securing cloud servers, and Software/Database designs are some of my key roles in this field. From web components and UX/UI to complicated backend integrations, you can always count on me.</Paragraph>
         <animated.div
           style={{ ...propsHandShow, width: `100%` }}
         >

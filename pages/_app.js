@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     height: 100%;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto', monospace;
   }
 
   .awssld__content > div{

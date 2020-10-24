@@ -130,7 +130,7 @@ const Index = () => {
           >
             <Name>Edmhar Fabros</Name>
           </animated.div>
-          <Position className="typewrite" data-period="1000" data-type='[ "Backend Developer", "Frontend Developer", "Full Stack Developer :)"]'>
+          <Position className="typewrite" data-period="1000" data-type='[ "Backend web developer..", "Frontend Web Developer..", "Full-Stack Web Developer."]'>
             <span className="wrap"></span>
           </Position>
           <animated.div

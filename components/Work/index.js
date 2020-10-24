@@ -14,7 +14,8 @@ import {
   Company,
   Technologies,
   IconContainer,
-  Chip
+  Chip,
+  TechnologyText
 } from './components'
 
 import { useSpring, animated, interpolate } from 'react-spring'
@@ -48,10 +49,8 @@ const Index = () => {
     <Container>
       <TextContainer>
         <Title>
-          Work
-          <Paragraph>This is what my passion leads me after 4 years.</Paragraph>
+        Work
         </Title>
-
         <TimelineContainer>
           <Timeline>
             <TimelineElement
@@ -63,6 +62,7 @@ const Index = () => {
             >
               <Position className="vertical-timeline-element-title">Senior Backend Developer</Position>
               <Company className="vertical-timeline-element-subtitle">Nexplay</Company>
+              <TechnologyText>Technologies:</TechnologyText>
               <Technologies>
                 <Chip>React.js</Chip>
                 <Chip>Redux</Chip>
@@ -83,6 +83,7 @@ const Index = () => {
             >
               <Position className="vertical-timeline-element-title">Senior Web Developer</Position>
               <Company className="vertical-timeline-element-subtitle">Zynappse Corp.</Company>
+              <TechnologyText>Technologies:</TechnologyText>
               <Technologies>
                 <Chip>React.js</Chip>
                 <Chip>Redux</Chip>
@@ -102,7 +103,8 @@ const Index = () => {
             >
               <Position className="vertical-timeline-element-title">Graduated</Position>
               <Company className="vertical-timeline-element-subtitle">STI College (Makati)</Company>
-              <Technologies>
+              <TechnologyText>Course:</TechnologyText>
+              <Technologies style={{ marginLeft: `5px` }}>
                 Bachelor of Science in Information Technology
               </Technologies>
             </TimelineElement>

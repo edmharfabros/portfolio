@@ -23,15 +23,15 @@ const Index = () => {
     },
     from: {
       transform: 'translateX(0px)',
-      
-    } 
+
+    }
   })
 
   return (
     <Container>
       <TextContainer>
-        <Title>Let's <span style={{ color: `#28abb9` }}>Connect</span>
-          <Paragraph>Got questions ? You can always message me using these platforms.</Paragraph>
+        <Title>Let's <span style={{ color: `rgb(40, 171, 185)` }}>{`<Connect />`}</span>
+          <Paragraph>Got questions? You can always message me using these platforms.</Paragraph>
         </Title>
         <Name>
           Edmhar Fabros
